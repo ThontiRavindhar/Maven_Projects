@@ -14,7 +14,7 @@ import java.util.Objects;
 @RequestMapping("/customer")
 public class CustomerController {
 
-    private CustomerService customerService;
+    private final CustomerService customerService;
 
     public CustomerController(CustomerService customerService) {
         Objects.requireNonNull(customerService);
@@ -23,7 +23,7 @@ public class CustomerController {
 
     @PostMapping("/saveCustomer")
     public void saveCustomer(@RequestBody Customer customer) {
-
+        customerService.saveCustomer(customer);
     }
 
 }
