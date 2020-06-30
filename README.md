@@ -1,3 +1,3 @@
 # Maven_Projects
 
-Sample Maven Project with Hibernate
+Sample Maven Project with Hibernate example
